@@ -14,6 +14,7 @@ You should read the tutorial on developerworks [url tbd]. This repository lets y
 
 The code is split in three parts:
 - Under the directory `rpi`, you will find the sources form the Bluetooth client on a Raspberry Pi
-- Under the directory `flows`, you will find the flows for Node-RED. Each flow is considered to put on a separate tab. Make life easier, even it is not necessary. Copy the content of the file and use the Import => Clipboard function of node red to import the flows
+- Under the directory `flows`, you will find the flows for Node-RED. Each flow is considered to put on a separate tab. Make life easier, even it is not necessary. Copy the content of the file and use the Import => Clipboard function of node red to import the flows. The flows read and write a database which is in Bluemix a service called `car-meets-home-cloudantNoSQLDB` and a database in this services called `car-meets-home`. You may want to change the service/database name according to your settings in the coudant nodes.
 - The other directories are "standard", they contain an HTML file, some JS files and pics for the dashboard, which is described in the last chapter of the above mentioned article Node-RED to connect a car to a smart home, 
 enabling the car to automatically activate household features, such as turning on the lights and adjusting the air conditioning.
+
