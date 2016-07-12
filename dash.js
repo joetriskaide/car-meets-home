@@ -78,7 +78,8 @@ var TSLDash = function() {
 		$('#bt-rssi').text(data.rssi).css('color', olddata.rssi === data.rssi?"green":"red");
 		$('#bt-rssimin').text(data.rssimin).css('color', olddata.rssimin === data.rssimin?"green":"red");
 		//$('#fan').prop('src', data.lastcmd=='on'?fan_g:fan_r);
-		$('#fan').css('background-color', data.lastcmd==='on'?'green':'red');
+		var c=data.lastcmd==='on'?'green':'red';
+		$('#fan').css('background-color', c).css('color', c);
 
 		$('#time').text(new Date().toLocaleString());
 		thiz.drawRssiMeter(data);
